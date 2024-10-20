@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Sublime bocado</title>
-    <link rel="stylesheet" href="css/Principal.css" />
+    <title>Compras</title>
+    <link rel="stylesheet" href="css/compras.css" />
 </head>
 
 <body>
@@ -14,7 +14,7 @@
             <nav class="nav">
                 <ul id="menu">
                     <li>
-                        <a href class="#">Inicio</a>
+                        <a href="Principal.html">Inicio</a>
                     </li>
                     <li>
                         <a href="Contactos.html">Contactos</a>
@@ -24,7 +24,12 @@
                         </ul>
                     </li>
                     <li>
-                        <a href="blog.html">blog</a>
+                        <a href="Redes.html">Redes</a>
+                        <ul>
+                            <li>
+                                <a href="Blogs.html">blog</a>
+                            </li>
+                        </ul>
                     </li>
 
                     <li>
@@ -46,77 +51,88 @@
                 <a href=""><img src="https://static.wixstatic.com/media/fdcfaba150fc427da298a00cb09d91c1.png/v1/fill/w_39,h_39,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/fdcfaba150fc427da298a00cb09d91c1.png" alt="instagram" /></a>
             </div>
         </div>
-        <h1>BIENVENIDO</h1>
+        <h1>COMPRAS</h1>
     </header>
     <main class="main">
-        <h1>PLATOS BANDERA</h1>
-        <article class="platos">
-            <h2>Platos de la casa una exquisites <br>
-                <span>ANTICUCHOS</span><br>
-                <span>AJI DE GALLINA</span><br>
-                <span>ARROZ CON POLLO</span><br>
-                <span>LOMO SALTADO</span><br>
-                <span>PACHAMANCA</span><br>
-                <span>CEVICHE</span><br>
-                    <button class="btn-2" type="button"><a href="carta.html">CARTA</a>
-                    </button>
-            </h2>
-               
-            <div class="carta">
-            </div>
-        </article>
-        <section class="text">
-            <article class="article">
-                <div>
-                    <h2>Historia del Restaurante</h2>
-                    <p>
-                        <b>La gastronomía peruana</b> tiene raíces profundas,
-                        influenciadas por las culturas precolombinas, la conquista
-                        española y las diversas migraciones que han enriquecido su
-                        historia. Desde los Andes hasta la costa, cada región ofrece una
-                        variedad de ingredientes y técnicas culinarias únicas, creando un
-                        mosaico de sabores y aromas. <b>Sublime Bocado</b> te invita a
-                        descubrir la riqueza y la historia de la cocina peruana, a través
-                        de platillos que celebran la fusión de sabores y tradiciones.
-                    </p>
+        <div class="container">
+            <form action="">
+                <div class="row">
+                    <div class="column">
+                        <h3 class="title">Lugar de envio o evento</h3>
+                        <div class="input-box">
+                            <span>Nombre completo:</span>
+                            <input type="text" placeholder="James Carlos">
+                        </div>
+                        <div class="input-box">
+                            <span>Email :</span>
+                            <input type="email" placeholder="ejemplo@ejemplo.com">
+                        </div>
+                        <div class="input-box">
+                            <span>Dirección :</span>
+                            <input type="text" placeholder="Av - DPTO - URB">
+                        </div>
+                        <div class="input-box">
+                            <span>Departamento</span>
+                            <input type="text" placeholder="Lima">
+                        </div>
+                        <div class="flex">
+                        <div class="input-box">
+                            <span>Distrito :</span>
+                            <input type="text" placeholder="Ate">
+                        </div>
+                        <div class="input-box">
+                            <span>Hora a programar :</span>
+                            <input type="datetime-local">
+                        </div>
+                        </div>
+                    </div>
+    
+                    <div class="column">
+                        <h3 class="title">Pago</h3>
+                        <div class="input-box">
+                            <span>Tarjetas aceptadas:</span>
+                            <img src="img/COMPRAS/Mastercard-removebg-preview.png" >
+                            <img src="img/COMPRAS/AmericanExpress-removebg-preview.png" >
+                            <img src="img/COMPRAS/Visa-removebg-preview.png" >
+                        </div>
+                        <div class="input-box">
+                            <span>Nombre y Apellido del Titular :</span>
+                            <input type="text" placeholder="James contreras">
+                        </div>
+                        <div class="input-box">
+                            <span>Número de Tarjeta de Crédito :</span>
+                            <input type="number" placeholder="1111 2222 3333 4444">
+                        </div>
+                        <div class="input-box">
+                            <span>Exp. Mes</span>
+                            <input type="text" placeholder="August">
+                        </div>
+                        <div class="flex">
+                        <div class="input-box">
+                            <span>Exp. Año :</span>
+                            <input type="number" placeholder="2024">
+                        </div>
+                        <div class="input-box">
+                            <span>Cvv :</span>
+                            <input type="number" placeholder="123">
+                        </div>
+                        </div>
+                    </div>
+    
+    
                 </div>
-                <img src="img/gastronomia-indigena.png" alt="gastronomia-indigena" />
-            </article>
-
-            <article class="article-1">
-                <div>
-                    <h2>Filosofia del Restaurante</h2>
-                    <p>
-                        Nuestra filosofía es crear y diseñar nuevos sabores en nuestros
-                        platos a la carta, destacándonos por la calidad e incomparable
-                        sabor en platillos criollos, marinos, etc. Y así poder conseguir
-                        que nuestros comensales se fidelicen con nuestro restaurante.
-                        Nuestro objetivo es compartir la pasión por la comida peruana con
-                        nuestros clientes, transportándolos a un viaje culinario lleno de
-                        aromas, texturas y sabores únicos.
-                    </p>
-                </div>
-                <img src="img/filosofia.png" alt="filosofia" />
-            </article>
-            <article class="article-2">
-                <div>
-                    <h2>Que ofrecemos:</h2>
-                    <p>
-                        <b>Clásicos peruanos:</b> Ceviche, Lomo Saltado, Aji de Gallina,
-                        Arroz con leche. <br />
-                        <b>Innovaciones:</b> Causa rellena con rellenos creativos,
-                        Tiradito, Pisco Sour. <br />
-                        <b>Fusión: </b>Combinaciones de sabores peruanos con ingredientes
-                        internacionales. <br />
-                        <b>Opciones </b>vegetarianas: Tacu tacu vegetariano, Causa rellena
-                        de quinoa y verduras, Sopa de quinua.
-                        <br />
-                        <b>Bebidas: </b>Chicha morada, jugo de maracuyá, pisco sour.
-                    </p>
-                </div>
-                <img src="img/Bebidas.png" alt="bebidas" />
-            </article>
-        </section>
+    
+                <button type="submit" class="btn"><img src="img/icons8-shopping-cart-24.png" alt="">Realizar compra</button>
+    
+            </form><div class="slider-box">
+            <ul>
+                <li><img src="img/COMPRAS/reserva1.png" alt=""> </li>
+                <li><img src="img/COMPRAS/reserva2.png" alt=""></li>
+                <li><img src="img/COMPRAS/reserva3.jpg" alt=""></li>
+                <li><img src="img/COMPRAS/reserva4.png" alt=""></li>
+            </ul>
+        </div>
+        </div>
     </main>
     <section class="imagen">
         <h1></h1>
@@ -159,10 +175,10 @@
     <footer>
         <div id="menu-2">
             <ul>
-                <li><a href="contactos.html">CONTÁCTENOS</a></li>
-                <li><a href="Experiencias.html">EXPERIENCIAS</a></li>
-                <li><a href="blog.html">BLOGS</a></li>
-                <li><a href="Reservas.html">RESERVAS</a></li>
+                <li><a href="">CONTÁCTENOS</a></li>
+                <li><a href="">EXPERIENCIAS</a></li>
+                <li><a href="">BLOGS</a></li>
+                <li><a href="">UBICACIÓN</a></li>
             </ul>
         </div>
         <div class="social-2">
